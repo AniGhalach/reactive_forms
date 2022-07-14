@@ -150,7 +150,7 @@ class ReactiveTextField<T> extends ReactiveFormField<T, String> {
             final state = field as _ReactiveTextFieldState<T>;
             final effectiveDecoration = decoration
                 .applyDefaults(Theme.of(state.context).inputDecorationTheme);
-
+//
             state._setFocusNode(focusNode);
             onControllerCreated?.call(state._textController);
             return TextField(
